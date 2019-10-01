@@ -82,7 +82,7 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div>
+      <React.Fragment>
         <h1> Hora actual: </h1>
         <h2> {this.state.now}</h2>
         <h1> Hora de carga: </h1>
@@ -96,7 +96,7 @@ export default class Home extends Component {
         <h2>{this.state.birth_date_f}</h2>
         <h1> Tiempo relativo: </h1>
         <h2> {this.state.time_elapsed_from_birth_date}</h2>
-      </div>
+      </React.Fragment>
     );
   }
 }
